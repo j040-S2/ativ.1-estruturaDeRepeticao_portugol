@@ -11,10 +11,12 @@ programa
 		leia(base, expoente)
 
 		resultado = 1
+		escreva(resultado)
 		
-		para(inteiro i = expoente; i>0; i--){
+		para(inteiro i =0; i<expoente; i++){
 			resultado = resultado*base
+			escreva("*", base)
 		}
-		escreva("O resultado é de: ", resultado)
+		escreva("\nO resultado é de: ", resultado)
 	}
 }
