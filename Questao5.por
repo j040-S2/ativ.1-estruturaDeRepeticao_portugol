@@ -3,20 +3,23 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro expoente
-		inteiro base
-		inteiro resultado
-		
-		escreva("Me de a base e o expoente de uma fração pra eu calcular.\n")
-		leia(base, expoente)
+			
+		escreva("Me de a base e o expoente de uma fração, nessa ordem para que eu calcule.\n")
+		calculePotencia()
+	}
 
+	funcao calculePotencia(){
+		inteiro resultado, base, expoente
+		
+		leia(base, expoente)
 		resultado = 1
-		escreva(resultado)
 		
 		para(inteiro i =0; i<expoente; i++){
 			resultado = resultado*base
-			escreva("*", base)
+			se(i>0)		{escreva("*")}
+			
+			escreva(base)
 		}
-		escreva("\nO resultado é de: ", resultado)
+		escreva("\nResultado final: ", resultado)
 	}
 }
