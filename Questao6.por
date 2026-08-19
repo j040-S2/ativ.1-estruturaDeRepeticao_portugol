@@ -6,20 +6,37 @@ programa
 		inteiro numeros[5]
 		inteiro pares[5]
 		inteiro impares[5]
-		inteiro totalPar
-		inteiro totalImpar
+		inteiro totalPar = 0
+		inteiro totalImpar = 0
 		
 		escreva("Me de 5 numeros inteiros")
 		
-para(i = 0; i==5; i++)
+		para(inteiro i = 0; i<5; i++){
+			numerosImparPar(numeros[i], totalPar, totalImpar, pares[descobrirVetor()], impares[descobrirVetor()])
+		}
 	}
-	funcao numerosImparPar(inteiro numero, inteiro numerosPares, inteiro numerosImpares, inteiro par, inteiro impar){
+
+	
+	funcao inteiro numerosImparPar(inteiro numero, inteiro numerosPares, inteiro numerosImpares, inteiro par, inteiro impar){
 		se(numero % 2 == 0){
-			par++
+			numerosPares++
 			par = numero
 		}senao{
-			impar++
+			numerosImpares++
 			impar = numero
 		}
+		retorne numerosPares
+		retorne numerosImpares
+		retorne par
+		retorne impar
+	}
+
+	
+	funcao descobrirVetor(inteiro variavel[], inteiro vetor){
+		enquanto(variavel[vetor] != 0){
+		vetor++
+		}
+		 
+		retorne
 	}
 }
